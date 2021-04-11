@@ -74,7 +74,7 @@ function minesweeper(matrix) {
           }
         }
       }
-    } else if (matrix[i] === true) {
+    } else {
       // только одна строка во всей матрице
       if (matrix.length - i > 1) {
         res[i + 1]++;
