@@ -11,26 +11,21 @@
  *
  */
 class Stack {
-  // constructor() {
-  //   return new Array();
-  // }
+  constructor() {
+    this.arr = [];
+  }
 
   push(element) {
-    if (Array.isArray(this)) {
-      this.Array.reverse().Array.push(element).Array.reverse();
-    }
-    // console.log(`this push: ${this}`);
+    this.arr.push(element);
     return this;
   }
 
   pop() {
-    // console.log(`this pop: ${this}`);
-    return this.Array.shift();
+    return this.arr.pop();
   }
 
   peek() {
-    // console.log(`this peek: ${this[0]}`);
-    return this[0];
+    return this.arr[this.arr.length - 1];
   }
 }
 
